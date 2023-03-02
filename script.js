@@ -21,6 +21,9 @@ tabs.forEach(tab => {
         const target = document.querySelector(tab.dataset.tabTarget)
         tabContents.forEach(tabContent => tabContent.classList.remove('active'))
         target.classList.add('active');
+
+        tabs.forEach(tabContent => tabs.classList.remove('active'))
+        target.classList.add('active');
     })
 })
 
