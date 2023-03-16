@@ -13,9 +13,9 @@
 
 
     <header class="navigation">
-        <div class="logo">
-            <img src="images/logo.png" class="logo" alt="">
-        </div>   
+        <a href="home.html"><div class="logo">
+            <img src="images/logo.png" class="logo" alt="Sundiver Solutions logo">
+        </div></a>  
         <button class="nav-toggle">
             <span class="hamburger"></span>
         </button>
@@ -28,7 +28,46 @@
             </ul>
         </nav>
     </header>
+    
 
+
+
+
+    <section class="contact-form-container">
+        <div class="form-border">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="your-access-key-here">
+            <input type="hidden" name="subject" value="New Submission from Sundiver Solutions">
+            <input type="text" name="name" required class="name" placeholder="Name">
+            <input type="text" name="name" required class="name" placeholder="Business">
+            <input type="text" name="phone" class="name" placeholder="Phone Number">
+            <input type="email" name="email" required class="name" placeholder="Email">
+            <textarea name="message" required class="name" placeholder="What can we do for you?"></textarea>
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            <button type="submit" class="submit-btn">Submit Form</button>
+          </form>
+        </div>
+  
+  
+  
+        <div class="contact-info">
+            <h2>Do you have any projects in mind? <span class="blue">CONTACT US</span> below to tell us about your exciting idea or to 
+                ask any questions you may have. No comittment, no pressure, just conversation.
+            </h2>
+            <div class="contact-info-details">
+              <img class="contact-icon" src="images/email.png" alt="email icon">
+              <p><span class="blue">Email Address:</span> <br>sharpewebsites@gmail.com</p>
+            </div>
+            <div class="contact-info-details">
+              <img class="contact-icon" src="images/telephone.png" alt="telephone icon">
+              <p><span class="blue">Phone Number:</span><br>601-454-5426</p>
+            </div>
+            <div class="contact-info-details">
+                <img class="contact-icon" src="images/placeholder.png" alt="telephone icon">
+                <p><span class="blue">Locations</span><br>New York and Switzerland - services provided for any place in the world!</p>
+              </div>
+        </div>
+      </section>
 
 
 

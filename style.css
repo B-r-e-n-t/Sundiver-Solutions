@@ -450,7 +450,7 @@ body {
 
 /*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>> Process  <<<<<<<<<<<<<<<<<<<<<<<  */
 
-.process-section {
+/* .process-section {
   display: flex;
   padding: 50px 100px 50px 100px;
   margin-bottom: 100px;
@@ -467,11 +467,18 @@ body {
   width: 500px;
   color: white;
   font-weight: var(--fw-bold);
+  max-height: 435px;
 }
 
 .step-tab {
   padding: 30px 50px 30px 5px;
   border-radius: 10px 0px 0px 10px;
+  max-width: 200px;
+}
+
+.process-btn {
+  margin-left: 60%;
+  min-width: 150px;
 }
 
 .step-tab::after {
@@ -492,7 +499,8 @@ body {
 }
 
 .active[data-tab-content] {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .active .step-tab {
@@ -509,12 +517,23 @@ body {
   padding: 50px;
   height: 100%;
   margin-right: 50px;
+  gap: 25px;
+
 
   animation: fadeIn 2s;
   -webkit-animation: fadeIn 2s;
   -moz-animation: fadeIn 2s;
   -o-animation: fadeIn 2s;
   -ms-animation: fadeIn 2s;
+}
+
+.process-content-info {
+  max-width: 300px;
+}
+
+.process-img {
+  width: 300px;
+  height: 300px;
 }
 
 @media(max-width: 900px) {
@@ -536,6 +555,7 @@ body {
     margin: 0;
     padding: 50px;
     border-radius: 0px 0px 10px 10px;
+    max-height: 435px;
   }
 
   .processes-tabs {
@@ -544,7 +564,7 @@ body {
     width: 100%;
     justify-content: space-between;
   }
-}
+} */
 
 
 /*  >>>>>>>>>>>>>>>>>>>>>>>>>> Benefits  <<<<<<<<<<<<<<<<<<<<<<<<<<<  */
@@ -756,7 +776,7 @@ textarea {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 75px;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 0;
   padding: 50px;
 }
