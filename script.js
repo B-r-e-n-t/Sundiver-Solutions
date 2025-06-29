@@ -152,7 +152,7 @@ function switchTab(tabName) {
 // Contact functionality
 function handleTextBrent() {
   const message = encodeURIComponent("Hi Brent, I'm interested in a quote for landscaping services.")
-  const smsUrl = `sms:6014545426?body=${message}`
+  const smsUrl = `sms:3153080879?body=${message}`
 
   // Try to open SMS app
   window.location.href = smsUrl
