@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawn Care Services | Sharpe Home Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="navbar">
+    <img src="images/LawnCareLogo.png" alt="" class="nav-logo">
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="lawn-care.html">Lawn Care</a>
+        <a href="junk-removal.html">Junk Removal</a>
+        <a href="handyman.html">Handyman</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+    <button class="quote-btn" onclick="scrollToContact()">Request a Quote</button>
+    <button class="mobile-menu-icon" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+</header>
+
+<div class="top-phone-bar">
+    Call or Text: <span>(555) 123-4567</span>
+</div>
+
+<!-- RIGHT-SIDE MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu">
+    <button class="close-menu" onclick="toggleMenu()">×</button>
+    <a href="index.html">Home</a>
+    <a href="lawn-care.html">Lawn Care</a>
+    <a href="junk-removal.html">Junk Removal</a>
+    <a href="handyman.html">Handyman</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#contact" class="mobile-quote">Request a Quote</a>
+</div>
+
+<section class="hero">
+    <div class="hero-inner">
+        <div class="hero-left">
+            <div class="hero-tagline">Lawn Care</div>
+            <h1>Keep Your Lawn Looking Sharp.</h1>
+            <p class="hero-subtitle">
+                Regular mowing, edging, and seasonal cleanups tailored to your yard.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary">Get a Lawn Care Quote</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-highlight-card">
+                <h3>Lawn Services</h3>
+                <ul>
+                    <li>Weekly & bi-weekly mowing</li>
+                    <li>Edging and trimming</li>
+                    <li>Mulching & bed cleanups</li>
+                    <li>Spring & fall cleanups</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-section">
+    <h2>What We Offer</h2>
+    <ul style="max-width:600px;margin:auto;text-align:left;line-height:1.6;">
+        <li>Reliable weekly or bi-weekly mowing schedules</li>
+        <li>Neat edges along sidewalks, driveways, and beds</li>
+        <li>Mulching and light landscaping cleanups</li>
+        <li>Spring and fall leaf and debris cleanups</li>
+        <li>Custom plans based on your yard size and needs</li>
+    </ul>
+</section>
+
+<section id="contact" class="contact-section">
+    <h2>Request a Lawn Care Quote</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="text" placeholder="Phone Number" required>
+        <textarea placeholder="Tell us about your lawn..." required></textarea>
+        <button class="btn-primary">Submit Request</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>Sharpe Home Services LLC</p>
+    <p>Serving Your City & surrounding areas</p>
+    <p>© 2025 Sharpe Home Services. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

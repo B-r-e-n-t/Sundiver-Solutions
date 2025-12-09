@@ -3,522 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magnolia Property Services - Small Jobs. Big Care.</title>
+    <title>Sharpe Junk Removal | Sharpe Home Services</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Sticky Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-          <img class="nav-logo" src="images/ChatGPT Image Jun 17, 2025, 10_41_50 PM.png" alt="">
-            
-            <div class="nav-links">
-                <a href="#services" class="nav-link" data-section="services">Services</a>
-                <a href="#gallery" class="nav-link" data-section="gallery">Gallery</a>
-                <a href="#about" class="nav-link" data-section="about">About</a>
-                <a href="#contact" class="nav-link" data-section="contact">Book</a>
-                <a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a>
-            </div>
 
-            <button class="cta-button" onclick="scrollToSection('contact')">
-                Text or Email Brent Now
-            </button>
+<header class="navbar">
+    <img src="images/JRlogo.png" alt="" class="nav-logo">
+    <!-- <nav class="nav-links"> -->
+        <!-- <a href="index.html">Home</a> -->
+        <!-- <a href="lawn-care.html">Lawn Care</a> -->
+        <!-- <a href="junk-removal.html">Junk Removal</a> -->
+        <!-- <a href="handyman.html">Handyman</a> -->
+        <!-- <a href="index.html#about">About</a> -->
+        <!-- <a href="index.html#contact">Contact</a> -->
+    <!-- </nav> -->
+    <h2>Prices starting at $60</h2>
+    <button class="quote-btn" onclick="scrollToContact()">Request a Quote</button>
+    <button class="mobile-menu-icon" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+</header>
 
-            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
+<div class="top-phone-bar">
+    Call or Text: <span>(315) 308-0879</span>
+</div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Small Jobs. Big Care.</h1>
+<!-- RIGHT-SIDE MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu">
+    <button class="close-menu" onclick="toggleMenu()">×</button>
+    <!-- <a href="index.html">Home</a> -->
+    <!-- <a href="lawn-care.html">Lawn Care</a> -->
+    <a href="junk-removal.html">Junk Removal</a>
+    <!-- <a href="handyman.html">Handyman</a> -->
+    <!-- <a href="index.html#about">About</a> -->
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#contact" class="mobile-quote">Request a Quote</a>
+</div>
+
+<section class="hero">
+    <div class="hero-inner">
+        <div class="hero-left">
+            <div class="hero-tagline">Junk Removal</div>
+            <h1>Get the Clutter Out, Fast.</h1>
             <p class="hero-subtitle">
-                Mulching, weeding, pruning, and more — by someone who actually texts you back.
+                Full-service junk removal for garages, basements, rentals, and more.
             </p>
-            <button class="hero-cta" onclick="scrollToSection('contact')">
-                Get a Free Quote
-            </button>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-name">Mulching</h3>
-                        <p class="service-description">Freshen your beds and boost curb appeal</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cut"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-name">Weeding & Bed Clean-Up</h3>
-                        <p class="service-description">Get overgrown areas under control</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-name">New Plantings</h3>
-                        <p class="service-description">Flowers, shrubs, and garden installs</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                  <div class="service-icon">
-                      <i class="fas fa-seedling"></i>
-                  </div>
-                  <div class="service-content">
-                      <h3 class="service-name">Junk Removal</h3>
-                      <p class="service-description">Furniture, appliances, construction material, and general junk</p>
-                  </div>
-              </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mountain"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-name">Path Edging & Stone Borders</h3>
-                        <p class="service-description">Define beds and walkways cleanly</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-name">Edging</h3>
-                        <p class="service-description">Crisp lines along lawn and beds</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tree"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-name">Hedge & Tree Pruning</h3>
-                        <p class="service-description">Light shaping and trimming</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tint"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-name">Powerwashing</h3>
-                        <p class="service-description">Patios, sidewalks, siding, and more</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-name">General Outdoor Maintenance</h3>
-                        <p class="service-description">Odd jobs and seasonal upkeep</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="services-note">
-                <p>Not sure if your job's a fit? It probably is. We take on the small, overlooked stuff others won't.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary">Get a Junk Removal Quote</a>
             </div>
         </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <h2 class="section-title">Our Work</h2>
-            
-            <div class="gallery-container">
-                <div class="gallery-slider" id="gallerySlider">
-                    <div class="gallery-slide active">
-                        <div class="before-after-grid">
-                            <div class="image-container">
-                                <img src="images/mulchrefresh.png?height=300&width=400" alt="Before - Mulch Refresh">
-                                <div class="image-label before">Before</div>
-                            </div>
-                            <div class="image-container">
-                                <img src="images/IMG_3992.jpeg?height=300&width=400" alt="After - Mulch Refresh">
-                                <div class="image-label after">After</div>
-                            </div>
-                        </div>
-                        <p class="gallery-caption">Mulch Refresh – Euclid Ave.</p>
-                    </div>
-
-                    <div class="gallery-slide">
-                        <div class="before-after-grid">
-                            <div class="image-container">
-                                <img src="images/dirtydrive.jpg?height=300&width=400" alt="Before - Powerwashing">
-                                <div class="image-label before">Before</div>
-                            </div>
-                            <div class="image-container">
-                                <img src="images/cleandrive.png?height=300&width=400" alt="After - Powerwashing">
-                                <div class="image-label after">After</div>
-                            </div>
-                        </div>
-                        <p class="gallery-caption">Powerwashing – Outer Comstock</p>
-                    </div>
-
-                    <div class="gallery-slide">
-                        <div class="before-after-grid">
-                            <div class="image-container">
-                                <img src="images/weedgarden.png?height=300&width=400" alt="Before - Garden Bed Clean-Up">
-                                <div class="image-label before">Before</div>
-                            </div>
-                            <div class="image-container">
-                                <img src="images/ABA5915A-5385-470E-A4B3-B31F3AF3E2CE_1_105_c.jpeg?height=300&width=400" alt="After - Garden Bed Clean-Up">
-                                <div class="image-label after">After</div>
-                            </div>
-                        </div>
-                        <p class="gallery-caption">Garden Bed Clean-Up – Westcott</p>
-                    </div>
-
-                    <div class="gallery-slide">
-                        <div class="before-after-grid">
-                            <div class="image-container">
-                                <img src="images/noflowers.png?height=300&width=400" alt="Before - New Plantings">
-                                <div class="image-label before">Before</div>
-                            </div>
-                            <div class="image-container">
-                                <img src="images/aniston-grace-L3hyEbDk194-unsplash.jpg?height=300&width=400" alt="After - New Plantings">
-                                <div class="image-label after">After</div>
-                            </div>
-                        </div>
-                        <p class="gallery-caption">New Plantings – Tipp Hill</p>
-                    </div>
-
-                    <div class="gallery-slide">
-                        <div class="before-after-grid">
-                            <div class="image-container">
-                                <img src="images/shabbyhedges.png?height=300&width=400" alt="Before - Hedge Pruning">
-                                <div class="image-label before">Before</div>
-                            </div>
-                            <div class="image-container">
-                                <img src="images/piotr-ams-PVIZ8MKBmPM-unsplash.jpg?height=300&width=400" alt="After - Hedge Pruning">
-                                <div class="image-label after">After</div>
-                            </div>
-                        </div>
-                        <p class="gallery-caption">Hedge Pruning – University Area</p>
-                    </div>
-                </div>
-
-                <button class="gallery-nav prev" onclick="prevGalleryImage()">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="gallery-nav next" onclick="nextGalleryImage()">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+        <div class="hero-right">
+            <div class="hero-highlight-card">
+                <h3>We Haul</h3>
+                <ul>
+                    <li>Household junk & furniture</li>
+                    <li>Garage & basement cleanouts</li>
+                    <li>Construction debris</li>
+                    <li>Appliances & more</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="images/ChatGPT Image Jun 17, 2025, 10_41_50 PM.png?height=400&width=400" alt="Brent - Owner of Neighbor's Landscaping">
-                </div>
+<section class="services-section">
+    <h2>Services Include</h2>
+    <ul style="max-width:600px;margin:auto;text-align:left;line-height:1.6;">
+        <li>Single-item pickups or full property cleanouts</li>
+        <li>Garage, basement, attic, and shed cleanouts</li>
+        <li>Construction debris and renovation material removal</li>
+        <li>Appliance and furniture hauling</li>
+        <li>Curbside pickups available</li>
+    </ul>
+</section>
 
-                <div class="about-content">
-                    <h2 class="about-title">Hi, We are Brent and Hunter.</h2>
-                    <p class="about-text">
-                      We’re a small team based right here in Syracuse. We started Magnolia Property Services because we saw how hard it can be to get help with small outdoor jobs. The big companies either ignore you or try to upsell you. We just show up and do the work you actually need—no pressure, no gimmicks, just honest help from your neighbors.
-                    </p>
+<section class="gallery">
+    <img class="photo1" src="images/Web_Photo_Editor.jpg" alt="">
+    <img class="photo1" src="images/Web_Photo_Editor (2).jpg" alt="">
+</section>
 
-                    <h3 class="service-areas-title">Where We Work</h3>
-                    <div class="service-areas">
-                        <span class="area-tag"><i class="fas fa-map-marker-alt"></i> Eastwood</span>
-                        <span class="area-tag"><i class="fas fa-map-marker-alt"></i> Westcott</span>
-                        <span class="area-tag"><i class="fas fa-map-marker-alt"></i> University</span>
-                        <span class="area-tag"><i class="fas fa-map-marker-alt"></i> Tipp Hill</span>
-                        <span class="area-tag"><i class="fas fa-map-marker-alt"></i> Outer Comstock</span>
-                        <span class="area-tag"><i class="fas fa-map-marker-alt"></i> Fayetteville</span>
-                    </div>
-                    <p class="areas-note">and surrounding areas</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="contact" class="contact-section">
+    <h2>Request a Junk Removal Quote</h2>
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="eed1c023-2f3e-48d9-90f1-216f22995564">
+        <input name="name" type="text" placeholder="Your Name" required>
+        <input name="number" type="text" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Describe what you need removed..." required></textarea>
+        <button type="submit" class="btn-primary">Submit Request</button>
+    </form>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Book a Visit</h2>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>Sharpe Junk Removal</p>
+    <p>Serving Your City & surrounding areas</p>
+    <p>© 2025 Sharpe Junk Removal. All rights reserved.</p>
+</footer>
 
-            <div class="contact-container">
-                <div class="tabs">
-                    <div class="tab-buttons">
-                        <button class="tab-button active" onclick="switchTab('text')">Text Brent</button>
-                        <button class="tab-button" onclick="switchTab('email')">Email Form</button>
-                    </div>
-
-                    <div class="tab-content">
-                        <div id="text-tab" class="tab-panel active">
-                            <div class="text-panel">
-                                <i class="fas fa-comment-dots text-icon"></i>
-                                <h3>Text Brent Directly</h3>
-                                <p>Click to text Brent directly — no app or form needed.(only works on mobile)</p>
-                                <button class="text-button" onclick="handleTextBrent()">
-                                    📱 Text Brent Now
-                                </button>
-                            </div>
-                        </div>
-
-                        <div id="email-tab" class="tab-panel">
-                            <form class="contact-form" onsubmit="handleFormSubmit(event)">
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="name">Name *</label>
-                                        <input type="text" id="name" name="name" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email *</label>
-                                        <input type="email" id="email" name="email" required>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="phone">Phone (optional)</label>
-                                    <input type="tel" id="phone" name="phone">
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="services-label">Services Needed</label>
-                                    <div class="services-checkboxes">
-                                        <div class="checkbox-group">
-                                            <input type="checkbox" id="mulching" name="services" value="mulching">
-                                            <label for="mulching">Mulching</label>
-                                        </div>
-                                        <div class="checkbox-group">
-                                            <input type="checkbox" id="weeding" name="services" value="weeding">
-                                            <label for="weeding">Weeding & Bed Clean-Up</label>
-                                        </div>
-                                        <div class="checkbox-group">
-                                            <input type="checkbox" id="planting" name="services" value="planting">
-                                            <label for="planting">New Plantings</label>
-                                        </div>
-                                        <div class="checkbox-group">
-                                            <input type="checkbox" id="edging" name="services" value="edging">
-                                            <label for="edging">Path Edging & Stone Borders</label>
-                                        </div>
-                                        <div class="checkbox-group">
-                                            <input type="checkbox" id="lawn-edging" name="services" value="lawn-edging">
-                                            <label for="lawn-edging">Edging</label>
-                                        </div>
-                                        <div class="checkbox-group">
-                                            <input type="checkbox" id="pruning" name="services" value="pruning">
-                                            <label for="pruning">Hedge & Tree Pruning</label>
-                                        </div>
-                                        <div class="checkbox-group">
-                                            <input type="checkbox" id="powerwashing" name="services" value="powerwashing">
-                                            <label for="powerwashing">Powerwashing</label>
-                                        </div>
-                                        <div class="checkbox-group">
-                                            <input type="checkbox" id="maintenance" name="services" value="maintenance">
-                                            <label for="maintenance">General Outdoor Maintenance</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="date">Preferred Date</label>
-                                        <input type="date" id="date" name="date">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="time">Preferred Time</label>
-                                        <select id="time" name="time">
-                                            <option value="">Select time</option>
-                                            <option value="morning">Morning (8am-12pm)</option>
-                                            <option value="afternoon">Afternoon (12pm-5pm)</option>
-                                            <option value="evening">Evening (5pm-7pm)</option>
-                                            <option value="weekend">Weekend</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="comments">Comments</label>
-                                    <textarea id="comments" name="comments" placeholder="Tell us about your project..."></textarea>
-                                </div>
-
-                                <button type="submit" class="submit-button">Send Request</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title">What Your Neighbors Are Saying</h2>
-
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-quote">
-                        "Brent and Hunter showed up exactly when they said they would and did beautiful work on our overgrown beds."
-                    </p>
-                    <div class="testimonial-author">
-                        <p class="author-name">Maria</p>
-                        <p class="author-location">Westcott</p>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-quote">
-                        "Finally found someone who actually texts back! Great mulching job."
-                    </p>
-                    <div class="testimonial-author">
-                        <p class="author-name">Dan</p>
-                        <p class="author-location">Fayetteville</p>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-quote">
-                        "Reasonable prices and reliable service. Our yard looks amazing."
-                    </p>
-                    <div class="testimonial-author">
-                        <p class="author-name">Sarah</p>
-                        <p class="author-location">Eastwood</p>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-quote">
-                        "Magnolia's attention to detail is impressive. Highly recommend!"
-                    </p>
-                    <div class="testimonial-author">
-                        <p class="author-name">Mike</p>
-                        <p class="author-location">Tipp Hill</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seasonal Tips Section -->
-    <section class="seasonal-tips">
-        <div class="container">
-            <h2 class="section-title">This Month's Quick Tip</h2>
-
-            <div class="tips-grid">
-                <div class="tip-card">
-                    <i class="fas fa-calendar-alt tip-icon"></i>
-                    <h3>Perfect Timing</h3>
-                    <p>Now's the perfect time to prune back shrubs before summer growth hits.</p>
-                </div>
-
-                <div class="tip-card special-offer">
-                    <i class="fas fa-star tip-icon"></i>
-                    <h3>Special Offer</h3>
-                    <p>$25 off any spring planting through May 31st</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h3 class="footer-title">Magnolia Property Services</h3>
-                    <p class="footer-description">Small jobs. Big care. Serving Syracuse and surrounding areas.</p>
-                </div>
-
-                <div class="footer-section">
-                    <h4 class="footer-heading">Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="#services" onclick="scrollToSection('services')">Services</a>
-                        <a href="#gallery" onclick="scrollToSection('gallery')">Gallery</a>
-                        <a href="#about" onclick="scrollToSection('about')">About</a>
-                        <a href="#contact" onclick="scrollToSection('contact')">Book</a>
-                        <a href="#testimonials" onclick="scrollToSection('testimonials')">Testimonials</a>
-                    </div>
-                </div>
-
-                <div class="footer-section">
-                    <h4 class="footer-heading">Contact</h4>
-                    <div class="footer-contact">
-                        <a href="tel:3155551234" class="contact-link">
-                            <i class="fas fa-phone"></i>
-                            (315) 555-1234
-                        </a>
-                        <a href="mailto:brent@neighborslandscaping.com" class="contact-link">
-                            <i class="fas fa-envelope"></i>
-                            brent@magnoliapropertyservices.com
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> Magnolia Property Services. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
